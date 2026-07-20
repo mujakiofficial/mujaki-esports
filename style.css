@@ -687,3 +687,28 @@ footer {
     font-size: 13px;
   }
 }
+
+
+/* ===== Center Logo Update ===== */
+.hero{
+  text-align:center;
+}
+.hero-inner{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+.hero-logo{
+  width:clamp(180px,22vw,260px);
+  margin:0 auto 28px;
+}
+.hero h1{
+  text-align:center;
+}
+.hero-copy{
+  text-align:center;
+  max-width:720px;
+}
+.hero-buttons{
+  justify-content:center;
+}
