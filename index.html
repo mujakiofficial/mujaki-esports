@@ -1,167 +1,271 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MUJAKI ESPORTS | 無邪気に楽しめ。</title>
-  <meta name="description" content="MUJAKI ESPORTSは、ゲームは楽しむものをモットーに、大会運営・イベント運営・配信者サポートを行うeスポーツチームです。" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MUJAKI ESPORTSは「ゲームは楽しむもの」を理念に、大会・イベント運営やストリーマー支援を行うeスポーツチームです。">
+  <meta name="theme-color" content="#090909">
+  <title>MUJAKI ESPORTS</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
   <header class="site-header">
-    <a href="#top" class="brand" aria-label="MUJAKI ESPORTS ホーム">
-      <img src="logo.png" alt="MUJAKI ESPORTS ロゴ" />
-      <span>MUJAKI ESPORTS</span>
-    </a>
-    <button class="menu-button" aria-label="メニューを開く" aria-expanded="false">☰</button>
-    <nav class="nav">
-      <a href="#about">ABOUT</a>
-      <a href="#activities">ACTIVITIES</a>
-      <a href="#social">SOCIAL</a>
-      <a href="#contact">CONTACT</a>
-    </nav>
+    <div class="nav-wrap">
+      <a class="brand" href="#top" aria-label="MUJAKI ESPORTS ホーム">
+        <img src="logo.jpeg" alt="">
+        <span>MUJAKI <b>ESPORTS</b></span>
+      </a>
+
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="global-nav">
+        <span></span><span></span><span></span>
+        <span class="sr-only">メニューを開く</span>
+      </button>
+
+      <nav id="global-nav" class="global-nav" aria-label="メインナビゲーション">
+        <a href="#about">ABOUT</a>
+        <a href="#message">MESSAGE</a>
+        <a href="#record">RECORD</a>
+        <a href="#recruit">RECRUIT</a>
+        <a href="#social">SNS</a>
+        <a href="#contact">CONTACT</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section class="hero" id="top">
-      <div class="hero-overlay"></div>
-      <div class="hero-content">
-        <img class="hero-logo" src="logo.png" alt="無邪気 MUJAKI ロゴ" />
-        <p class="eyebrow">ESPORTS TEAM</p>
-        <h1>無邪気に楽しめ。</h1>
-        <p class="hero-copy">
+  <main id="top">
+    <section class="hero">
+      <div class="hero-lines" aria-hidden="true"></div>
+      <div class="hero-copy">
+        <p class="kicker reveal">MUJAKI ESPORTS</p>
+        <h1 class="hero-title">
+          <span class="title-line">無邪気に、</span>
+          <span class="title-line accent">楽しめ。</span>
+        </h1>
+        <p class="hero-lead reveal">
           ゲームは楽しむもの。<br>
-          大会運営、イベント運営、配信者サポートを通じて、<br class="desktop-break">
-          誰もが本気で楽しめる場所をつくります。
+          大会・イベント運営、配信者サポートを通じて、<br class="desktop-only">
+          誰もが本気で遊べる場所をつくるeスポーツチームです。
         </p>
-        <div class="hero-actions">
-          <a class="button primary" href="#about">チームについて</a>
-          <a class="button secondary" href="https://x.com/MUJAKI_ESPORTS" target="_blank" rel="noopener">Xを見る</a>
+        <div class="hero-actions reveal">
+          <a class="button button-primary" href="#record">活動実績を見る</a>
+          <a class="button button-ghost" href="#recruit">ストリーマー募集</a>
         </div>
       </div>
+
+      <div class="hero-mark reveal" aria-hidden="true">
+        <div class="logo-frame">
+          <img src="logo.jpeg" alt="">
+        </div>
+        <p>PLAY WITH INNOCENCE.</p>
+      </div>
+
+      <a class="scroll-hint" href="#about" aria-label="次のセクションへ">
+        <span>SCROLL</span><i></i>
+      </a>
     </section>
 
-    <section class="section intro" id="about">
-      <div class="section-heading">
-        <p class="eyebrow">ABOUT US</p>
-        <h2>ゲームを、もっと無邪気に。</h2>
-      </div>
-      <div class="intro-grid">
-        <div class="intro-copy">
-          <p>
-            <strong>MUJAKI ESPORTS</strong>は、「ゲームは楽しむもの」をモットーに活動するeスポーツチームです。
-          </p>
-          <p>
-            ストリートファイター6を中心とした大会・イベントの企画運営、配信活動、配信者サポートを行っています。
-            初心者から上級者まで、誰もが挑戦し、交流し、楽しめる環境づくりを大切にしています。
-          </p>
-        </div>
-        <div class="quote-card">
-          <span>OUR MOTTO</span>
-          <strong>PLAY SERIOUS.<br>ENJOY FREELY.</strong>
-          <p>本気で遊び、無邪気に楽しむ。</p>
+    <section id="about" class="section section-dark">
+      <div class="section-heading reveal">
+        <p class="section-no">01</p>
+        <div>
+          <p class="eyebrow">ABOUT US</p>
+          <h2>ゲームを、人生の楽しみに。</h2>
         </div>
       </div>
-    </section>
-
-    <section class="section activities" id="activities">
-      <div class="section-heading">
-        <p class="eyebrow">ACTIVITIES</p>
-        <h2>主な活動</h2>
+      <div class="about-grid">
+        <p class="large-copy reveal">
+          「ゲームは楽しむもの」<br>
+          その原点を、忘れない。
+        </p>
+        <div class="body-copy reveal">
+          <p>
+            MUJAKI ESPORTSは、大会運営・イベント企画・ストリーマーサポートを通じて、
+            ゲームを楽しむ人々がつながり、新しい挑戦や出会いが生まれる場所を目指しています。
+          </p>
+          <p>
+            勝敗や実績だけではなく、仲間と過ごす時間や、夢中になれる瞬間そのものを大切にします。
+          </p>
+        </div>
       </div>
 
-      <div class="activity-grid">
-        <article class="activity-card">
-          <span class="activity-number">01</span>
+      <div class="activity-cards">
+        <article class="activity-card reveal">
+          <span>01</span>
           <h3>TOURNAMENT</h3>
-          <p>オンライン・オフライン大会の企画、運営、進行、配信を行います。</p>
+          <p>オンライン大会やチーム戦を企画・運営し、参加者が熱く楽しく競える機会をつくります。</p>
         </article>
-
-        <article class="activity-card">
-          <span class="activity-number">02</span>
+        <article class="activity-card reveal">
+          <span>02</span>
           <h3>EVENT</h3>
-          <p>対戦会、交流会、コラボ企画など、プレイヤーがつながるイベントを開催します。</p>
+          <p>ゲームを通じた交流や、新しいつながりが生まれるイベントづくりに取り組みます。</p>
         </article>
-
-        <article class="activity-card">
-          <span class="activity-number">03</span>
-          <h3>CREATOR SUPPORT</h3>
-          <p>配信者の活動支援、企画協力、実況・解説体制の構築などを行います。</p>
+        <article class="activity-card reveal">
+          <span>03</span>
+          <h3>STREAMER SUPPORT</h3>
+          <p>配信者の活動を支え、個性や魅力をより多くの人へ届けるためのサポートを行います。</p>
         </article>
       </div>
     </section>
 
-    <section class="section social" id="social">
-      <div class="section-heading">
-        <p class="eyebrow">OFFICIAL SOCIAL</p>
-        <h2>公式アカウント</h2>
+    <section id="message" class="section section-red">
+      <div class="section-heading reveal">
+        <p class="section-no">02</p>
+        <div>
+          <p class="eyebrow">MESSAGE</p>
+          <h2>代表挨拶</h2>
+        </div>
+      </div>
+
+      <div class="message-layout">
+        <div class="message-quote reveal">
+          <span>“</span>
+          <p>誰もが無邪気に<br>楽しめる場所を。</p>
+        </div>
+        <div class="message-text reveal">
+          <p>MUJAKI ESPORTSの公式サイトをご覧いただき、ありがとうございます。</p>
+          <p>
+            私たちは、これまでスポーツ大会やイベントの企画・運営に携わってきたメンバーが集まり、
+            「ゲームを通じて、より多くの人が楽しめる場所をつくりたい」という想いから
+            MUJAKI ESPORTSを立ち上げました。
+          </p>
+          <p>
+            チームの理念である「ゲームは楽しむもの」を大切にし、勝敗だけではなく、
+            人との出会いや挑戦、そして笑顔が生まれる時間を提供したいと考えています。
+          </p>
+          <p>
+            大会運営やイベント企画、配信者サポートなど、さまざまな活動を通じて、
+            ゲームを楽しむすべての方々に価値ある体験を届けられるよう努めてまいります。
+          </p>
+          <p>
+            MUJAKI ESPORTSで過ごす時間が、皆さまの人生における
+            「楽しみ」のひとつとなれば幸いです。
+          </p>
+          <div class="signature">
+            <small>MUJAKI ESPORTS</small>
+            <strong>代表　いそじん</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="record" class="section section-black record-section">
+      <div class="section-heading reveal">
+        <p class="section-no">03</p>
+        <div>
+          <p class="eyebrow">ACTIVITY RECORD</p>
+          <h2>活動実績</h2>
+        </div>
+      </div>
+
+      <article class="record-feature reveal">
+        <div class="record-visual">
+          <img src="uraroji-logo.jpeg" alt="裏路地闘技場 イベントロゴ">
+        </div>
+        <div class="record-content">
+          <p class="tag">STREET FIGHTER 6 / ONLINE EVENT</p>
+          <h3>裏路地闘技場</h3>
+          <p class="record-lead">
+            配信者同士やリスナーがチームを組み、3週間にわたって熱戦を繰り広げたオンラインチーム大会。
+          </p>
+          <p>
+            単なる勝敗だけではなく、参加者同士の交流やチームの絆を深めることを目的に開催しました。
+            毎週の試合を通じて、それぞれのチームが成長し、応援する楽しさや仲間と戦う喜びを感じられるイベントとなりました。
+          </p>
+
+          <dl class="record-data">
+            <div><dt>GAME</dt><dd>Street Fighter 6</dd></div>
+            <div><dt>FORMAT</dt><dd>3on3 チーム戦</dd></div>
+            <div><dt>STYLE</dt><dd>オンライン</dd></div>
+            <div><dt>PERIOD</dt><dd>3週間</dd></div>
+          </dl>
+        </div>
+      </article>
+    </section>
+
+    <section id="recruit" class="section recruit-section">
+      <div class="recruit-bg" aria-hidden="true">JOIN US</div>
+      <div class="section-heading reveal">
+        <p class="section-no">04</p>
+        <div>
+          <p class="eyebrow">STREAMER RECRUIT</p>
+          <h2>所属ストリーマー募集</h2>
+        </div>
+      </div>
+
+      <div class="recruit-layout">
+        <div class="recruit-copy reveal">
+          <p class="large-copy">
+            一緒に、ゲームの楽しさを<br>
+            広げていく仲間を募集します。
+          </p>
+          <p>
+            MUJAKI ESPORTSでは、ゲームを楽しむ気持ちを大切にしながら活動していただける
+            ストリーマー・配信者を募集しています。
+          </p>
+          <p>
+            配信規模や実績は問いません。「ゲームは楽しむもの」という理念に共感し、
+            視聴者との交流を大切にできる方を歓迎します。
+          </p>
+        </div>
+
+        <div class="recruit-panel reveal">
+          <h3>ENTRY</h3>
+          <p>所属をご希望の方は、XのDMまたはメールよりお気軽にご連絡ください。</p>
+          <a class="contact-link" href="https://x.com/MUJAKI_ESPORTS" target="_blank" rel="noopener">
+            <span>X / DIRECT MESSAGE</span>
+            <b>@MUJAKI_ESPORTS</b>
+          </a>
+          <a class="contact-link" href="mailto:mujaki.gg.official@gmail.com">
+            <span>EMAIL</span>
+            <b>mujaki.gg.official@gmail.com</b>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="social" class="section section-dark">
+      <div class="section-heading reveal">
+        <p class="section-no">05</p>
+        <div>
+          <p class="eyebrow">OFFICIAL SNS</p>
+          <h2>最新情報をチェック</h2>
+        </div>
       </div>
 
       <div class="social-grid">
-        <a class="social-card" href="https://x.com/MUJAKI_ESPORTS" target="_blank" rel="noopener">
-          <span class="social-name">X</span>
-          <strong>@MUJAKI_ESPORTS</strong>
-          <span class="arrow">↗</span>
+        <a class="social-card reveal" href="https://x.com/MUJAKI_ESPORTS" target="_blank" rel="noopener">
+          <span>X</span><strong>@MUJAKI_ESPORTS</strong><i>↗</i>
         </a>
-        <a class="social-card" href="https://www.twitch.tv/isozin_ch_" target="_blank" rel="noopener">
-          <span class="social-name">TWITCH</span>
-          <strong>isozin_ch_</strong>
-          <span class="arrow">↗</span>
+        <a class="social-card reveal" href="https://www.twitch.tv/isozin_ch_" target="_blank" rel="noopener">
+          <span>TWITCH</span><strong>isozin_ch_</strong><i>↗</i>
         </a>
-        <a class="social-card" href="https://www.tiktok.com/@mujaki41" target="_blank" rel="noopener">
-          <span class="social-name">TIKTOK</span>
-          <strong>@mujaki41</strong>
-          <span class="arrow">↗</span>
+        <a class="social-card reveal" href="https://www.tiktok.com/@mujaki41" target="_blank" rel="noopener">
+          <span>TIKTOK</span><strong>@mujaki41</strong><i>↗</i>
         </a>
-        <a class="social-card" href="https://www.youtube.com/@isozin_ch" target="_blank" rel="noopener">
-          <span class="social-name">YOUTUBE</span>
-          <strong>isozin_ch</strong>
-          <span class="arrow">↗</span>
+        <a class="social-card reveal" href="https://www.youtube.com/@isozin_ch" target="_blank" rel="noopener">
+          <span>YOUTUBE</span><strong>isozin_ch</strong><i>↗</i>
         </a>
       </div>
     </section>
 
-    <section class="section contact" id="contact">
-      <div class="contact-inner">
-        <div>
-          <p class="eyebrow">CONTACT</p>
-          <h2>お問い合わせ</h2>
-          <p>
-            大会参加、イベント、コラボレーション、スポンサーシップ、配信者サポートに関するご相談はこちらからご連絡ください。
-          </p>
-        </div>
-        <a class="mail-button" href="mailto:mujaki.gg.official@gmail.com">
-          mujaki.gg.official@gmail.com
-          <span>→</span>
-        </a>
+    <section id="contact" class="contact-section">
+      <div class="contact-inner reveal">
+        <p class="eyebrow">CONTACT</p>
+        <h2>LET'S PLAY<br>TOGETHER.</h2>
+        <p>大会・イベント・コラボ・スポンサーシップに関するご相談はこちらから。</p>
+        <a href="mailto:mujaki.gg.official@gmail.com">mujaki.gg.official@gmail.com <span>↗</span></a>
       </div>
     </section>
   </main>
 
   <footer>
-    <div class="footer-brand">
-      <img src="logo.png" alt="" />
-      <span>MUJAKI ESPORTS</span>
-    </div>
-    <p>© 2026 MUJAKI ESPORTS. All Rights Reserved.</p>
+    <a class="footer-brand" href="#top">MUJAKI ESPORTS</a>
+    <p>© 2026 MUJAKI ESPORTS. ALL RIGHTS RESERVED.</p>
   </footer>
 
-  <script>
-    const button = document.querySelector('.menu-button');
-    const nav = document.querySelector('.nav');
-    button.addEventListener('click', () => {
-      const isOpen = nav.classList.toggle('open');
-      button.setAttribute('aria-expanded', String(isOpen));
-    });
-    document.querySelectorAll('.nav a').forEach(link => {
-      link.addEventListener('click', () => {
-        nav.classList.remove('open');
-        button.setAttribute('aria-expanded', 'false');
-      });
-    });
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
